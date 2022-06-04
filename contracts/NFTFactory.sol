@@ -8,7 +8,7 @@ contract NFTFactory {
         public
         returns (address)
     {
-        Album newDrop = new Album(name_, symbol_);
-        return address(newDrop);
+        Album newAlbum = new Album(name_, symbol_);
+        return address(newAlbum);
     }
 }
