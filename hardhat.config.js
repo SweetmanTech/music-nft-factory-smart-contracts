@@ -1,24 +1,9 @@
 require("@nomiclabs/hardhat-waffle");
 require("dotenv").config();
+require("@nomiclabs/hardhat-etherscan");
 
-// This is a sample Hardhat task. To learn how to create your own go to
-// https://hardhat.org/guides/create-task.html
-task("deploy", "Prints the list of accounts", async (taskArgs, hre) => {
-  const accounts = await hre.ethers.getSigners();
-
-  for (const account of accounts) {
-    console.log(account.address);
-  }
-});
-
-// You need to export an object to set up your config
-// Go to https://hardhat.org/config/ to learn more
-
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.10",
   networks: {
     hardhat: {},
     matic: {
@@ -40,6 +25,15 @@ module.exports = {
     arbitrumRinkeby: {
       url: process.env.ARBITRUM_RINKEBY_RPC,
       accounts: [process.env.PRIVATE_KEY],
+    },
+  },
+  etherscan: {
+    apiKey: {
+      goerli: process.env.GOERLI_ETHERSCAN_API,
+      optimisticKovan: process.env.OPTIMISM_ETHERSCAN_API,
+      polygon: process.env.POLYGON_ETHERSCAN_API,
+      polygonMumbai: process.env.POLYGON_ETHERSCAN_API,
+      arbitrumTestnet: process.env.ARBITRUM_ETHERSCAN_API,
     },
   },
 };
