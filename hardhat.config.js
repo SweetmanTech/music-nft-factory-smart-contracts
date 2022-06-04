@@ -21,8 +21,24 @@ module.exports = {
   solidity: "0.8.4",
   networks: {
     hardhat: {},
+    matic: {
+      url: process.env.MATIC_RPC,
+      accounts: [process.env.PRIVATE_KEY],
+    },
+    mumbai: {
+      url: process.env.MUMBAI_RPC,
+      accounts: [process.env.PRIVATE_KEY],
+    },
     goerli: {
-      url: "https://eth-goerli.alchemyapi.io/v2/nES5thZb3rDXgnXWzddTUNPrM_PGYyVK",
+      url: process.env.GOERLI_RPC,
+      accounts: [process.env.PRIVATE_KEY],
+    },
+    optimismKovan: {
+      url: process.env.OPTIMISM_KOVAN_RPC,
+      accounts: [process.env.PRIVATE_KEY],
+    },
+    arbitrumRinkeby: {
+      url: process.env.ARBITRUM_RINKEBY_RPC,
       accounts: [process.env.PRIVATE_KEY],
     },
   },
