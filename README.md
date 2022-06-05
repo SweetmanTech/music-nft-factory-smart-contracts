@@ -1,6 +1,7 @@
 # NFT Factory
 
-- ERC721
+- `createAlbum` use this to create a unique ERC721 smart contract.
+- Factory creates standard ERC721 contract with `public mint()` method.
 
 ## Verified Factory Deployments
 
