@@ -5,11 +5,11 @@
 
 ## Verified Factory Deployments
 
-- `Goerli Testnet` - [0xbae835d4C2f0670cA9395915Cb01239E18b2AbE5](https://goerli.etherscan.io/address/0xbae835d4C2f0670cA9395915Cb01239E18b2AbE5#code)
-- `Optimism Testnet` - [0xEee0A0bF6c757F7c63b85E65776806AF7Ec832BB](https://kovan-optimistic.etherscan.io/address/0xEee0A0bF6c757F7c63b85E65776806AF7Ec832BB#code)
-- `Polygon` - [0x88648bcC95419C7cA76d6b6ff5f7A1b3761573b8](https://polygonscan.com/address/0x88648bcC95419C7cA76d6b6ff5f7A1b3761573b8#code)
-- `Polygon Mumbai` - [0x096eb773bc250CFa274D55E18c0aB61D1317c9eC](https://mumbai.polygonscan.com/address/0x096eb773bc250CFa274D55E18c0aB61D1317c9eC#code)
-- `Arbitrum Testnet` - [0x0bAe95C4Fe7A153B137cD4EFB11d0F1527BDf4D1](https://testnet.arbiscan.io/address/0x0bAe95C4Fe7A153B137cD4EFB11d0F1527BDf4D1#code)
+- `Goerli Testnet` - [0x377022d8ACb2eBDC7283724DaaD0CEAA6fAd8F84](https://goerli.etherscan.io/address/0x377022d8ACb2eBDC7283724DaaD0CEAA6fAd8F84#code)
+- `Optimism Testnet` - [0x4C0a36F7f46893d01CF7F3541fcB171e7A4bF148](https://kovan-optimistic.etherscan.io/address/0x4C0a36F7f46893d01CF7F3541fcB171e7A4bF148#code)
+- `Polygon` - [0x314dE0B249D94241FB9601D77439aEB5870B2dA2](https://polygonscan.com/address/0x314dE0B249D94241FB9601D77439aEB5870B2dA2#code)
+- `Polygon Mumbai` - [0xC9aeCad048713F7f58F0276f39de1126f6d4f288](https://mumbai.polygonscan.com/address/0xC9aeCad048713F7f58F0276f39de1126f6d4f288#code)
+- `Arbitrum Testnet` - [0xbae835d4C2f0670cA9395915Cb01239E18b2AbE5](https://testnet.arbiscan.io/address/0xbae835d4C2f0670cA9395915Cb01239E18b2AbE5#code)
 
 ## Safety
 
