@@ -6,11 +6,11 @@ module.exports = {
   solidity: "0.8.10",
   networks: {
     hardhat: {},
-    matic: {
+    polygon: {
       url: process.env.MATIC_RPC,
       accounts: [process.env.PRIVATE_KEY],
     },
-    mumbai: {
+    polygonMumbai: {
       url: process.env.MUMBAI_RPC,
       accounts: [process.env.PRIVATE_KEY],
     },
@@ -18,11 +18,11 @@ module.exports = {
       url: process.env.GOERLI_RPC,
       accounts: [process.env.PRIVATE_KEY],
     },
-    optimismKovan: {
+    optimisticKovan: {
       url: process.env.OPTIMISM_KOVAN_RPC,
       accounts: [process.env.PRIVATE_KEY],
     },
-    arbitrumRinkeby: {
+    arbitrumTestnet: {
       url: process.env.ARBITRUM_RINKEBY_RPC,
       accounts: [process.env.PRIVATE_KEY],
     },
