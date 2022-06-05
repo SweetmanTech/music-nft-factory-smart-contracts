@@ -10,18 +10,12 @@
 - `Polygon Mumbai` - [0x096eb773bc250CFa274D55E18c0aB61D1317c9eC](https://mumbai.polygonscan.com/address/0x096eb773bc250CFa274D55E18c0aB61D1317c9eC#code)
 - `Arbitrum Testnet` - [0x0bAe95C4Fe7A153B137cD4EFB11d0F1527BDf4D1](https://testnet.arbiscan.io/address/0x0bAe95C4Fe7A153B137cD4EFB11d0F1527BDf4D1#code)
 
-# Basic Sample Hardhat Project
+## Safety
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+```diff
+- WARNING: these contracts are unaudited
 ```
+
+This is **experimental software** and is provided on an "as is" and "as available" basis.
+
+We **do not give any warranties** and **will not be liable for any loss** incurred through any use of this codebase.
