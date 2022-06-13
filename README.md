@@ -5,6 +5,11 @@
 
 ## Verified Factory Deployments
 
+- `Rinkeby Testnet` -
+- `Ropsten Testnet` -
+
+## Verified Implementation Deployments
+
 - `Rinkeby Testnet` - [0x2290FD692Ecf93f0B7BdA8f295c95270114ddB0f](https://rinkeby.etherscan.io/address/0x2290FD692Ecf93f0B7BdA8f295c95270114ddB0f#code)
 - `Ropsten Testnet` - [0x8Ae36b1459678f234C9d9C2fe383246909982EEf](https://ropsten.etherscan.io/address/0x8Ae36b1459678f234C9d9C2fe383246909982EEf#code
   #code)

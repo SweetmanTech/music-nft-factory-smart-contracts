@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {Album} from "./Album.sol";
+import {ETH_ERC721} from "./ETH_ERC721.sol";
 
 contract NFTFactory {
     event AlbumCreated(address _creator, address _album);
@@ -10,7 +10,7 @@ contract NFTFactory {
         public
         returns (address)
     {
-        Album newAlbum = new Album(name_, symbol_);
+        Album newAlbum = new ETH_ERC721(name_, symbol_);
         emit AlbumCreated(msg.sender, address(newAlbum));
         return address(newAlbum);
     }
