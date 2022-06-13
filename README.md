@@ -5,7 +5,7 @@
 
 ## Verified Factory Deployments
 
-- `Rinkeby Testnet` -
+- `Rinkeby Testnet` - [0xFa5707F3D4b3AD395b2B5e32C73DD6f22df508D0](https://rinkeby.etherscan.io/address/0xFa5707F3D4b3AD395b2B5e32C73DD6f22df508D0#code)
 - `Ropsten Testnet` -
 
 ## Verified Implementation Deployments

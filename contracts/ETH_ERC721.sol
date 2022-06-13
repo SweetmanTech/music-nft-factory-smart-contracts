@@ -50,8 +50,7 @@ contract ETH_ERC721 is
         uint256 _reserve_price,
         address _seller_funds_recipient,
         uint256 _start_time,
-        string memory _uri,
-        bytes32[] memory proof
+        string memory _uri
     ) public returns (uint256) {
         currentTokenId.increment();
 
