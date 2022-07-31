@@ -1,17 +1,25 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {Album} from "./Album.sol";
+import "@openzeppelin/contracts/proxy/Clones.sol";
+import "./Album.sol";
 
 contract NFTFactory {
-    event AlbumCreated(address _creator, address _album);
+    event AlbumCreated(address creator, address indexed contractAddress);
 
-    function createAlbum(string memory name_, string memory symbol_)
+    address implementation;
+
+    constructor(address _implementation) {
+        implementation = _implementation;
+    }
+
+    function createMusicNft(string memory _name, string memory _symbol)
         public
         returns (address)
     {
-        Album newAlbum = new Album(name_, symbol_);
-        emit AlbumCreated(msg.sender, address(newAlbum));
-        return address(newAlbum);
+        address clone = Clones.clone(implementation);
+        emit AlbumCreated(msg.sender, address(clone));
+        Album(address(clone)).initialize(_name, _symbol);
+        return address(clone);
     }
 }
