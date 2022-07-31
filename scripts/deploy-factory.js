@@ -2,23 +2,10 @@ const hre = require("hardhat");
 
 async function main() {
   const NFTFactory = await hre.ethers.getContractFactory("NFTFactory");
-  // // RINKEBY
-  // const mintSongsImplementation = "0x2290FD692Ecf93f0B7BdA8f295c95270114ddB0f";
-  // const zoraERC721TransferHelper = "0x029AA5a949C9C90916729D50537062cb73b5Ac92";
-  // const zoraReserveAuctionFindersEth =
-  //   "0x1b5A56DEa3d9760c6b14B709B9cf0ef9AaCD2730";
+  // MUMBAI
+  const musicNftImplementation = "0xedb55471c211c757a2f46f59ac598c7f10223d42";
 
-  // ROPSTEN
-  const mintSongsImplementation = "0x8Ae36b1459678f234C9d9C2fe383246909982EEf";
-  const zoraERC721TransferHelper = "0x0afB6A47C303f85c5A6e0DC6c9b4c2001E6987ED";
-  const zoraReserveAuctionFindersEth =
-    "0xbfF7B9C643bDE6fDb43b4f7c60Ea29C31D4621Df";
-
-  const factory = await NFTFactory.deploy(
-    mintSongsImplementation,
-    zoraERC721TransferHelper,
-    zoraReserveAuctionFindersEth
-  );
+  const factory = await NFTFactory.deploy(musicNftImplementation);
 
   await factory.deployed();
 
