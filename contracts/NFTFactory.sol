@@ -19,8 +19,7 @@ contract NFTFactory {
     {
         address clone = Clones.clone(implementation);
         emit AlbumCreated(msg.sender, address(clone));
-        Album album = Album(address(clone));
-        album.initialize(_name, _symbol);
+        Album(address(clone)).initialize(_name, _symbol);
         return address(clone);
     }
 }
