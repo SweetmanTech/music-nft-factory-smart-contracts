@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/proxy/Clones.sol";
 import "./Album.sol";
 
 contract NFTFactory {
-    event AlbumCreated(address indexed creator, address contractAddress);
+    event AlbumCreated(address creator, address indexed contractAddress);
 
     address implementation;
 
