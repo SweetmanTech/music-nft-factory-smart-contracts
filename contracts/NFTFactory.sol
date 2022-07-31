@@ -2,38 +2,25 @@
 pragma solidity ^0.8.10;
 
 import "@openzeppelin/contracts/proxy/Clones.sol";
-import "./ETH_ERC721.sol";
+import "./Album.sol";
 
 contract NFTFactory {
-    event AlbumCreated(address _creator, address _album);
+    event AlbumCreated(address indexed creator, address contractAddress);
 
     address implementation;
-    address zoraERC721TransferHelper;
-    address zoraReserveAuctionFindersEth;
 
-    constructor(
-        address _implementation,
-        address _zoraERC721TransferHelper,
-        address _zoraReserveAuctionFindersEth
-    ) {
+    constructor(address _implementation) {
         implementation = _implementation;
-        zoraERC721TransferHelper = _zoraERC721TransferHelper;
-        zoraReserveAuctionFindersEth = _zoraReserveAuctionFindersEth;
     }
 
-    function createMintSongsClone(string memory _name, string memory _symbol)
+    function createMusicNft(string memory _name, string memory _symbol)
         public
         returns (address)
     {
         address clone = Clones.clone(implementation);
         emit AlbumCreated(msg.sender, address(clone));
-        ETH_ERC721 album = ETH_ERC721(address(clone));
-        album.initialize(
-            _name,
-            _symbol,
-            zoraERC721TransferHelper,
-            zoraReserveAuctionFindersEth
-        );
+        Album album = Album(address(clone));
+        album.initialize(_name, _symbol);
         return address(clone);
     }
 }

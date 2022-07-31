@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.10;
 
-import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
 
-contract Album is ERC721 {
+contract Album is ERC721Upgradeable {
     // The tokenId of the token to be minted.
     uint256 private _tokenId;
 
-    constructor(string memory name_, string memory symbol_)
-        payable
-        ERC721(name_, symbol_)
+    function initialize(string memory name_, string memory symbol_)
+        public
+        initializer
     {
-        _tokenId = 0;
+        __ERC721_init(name_, symbol_);
     }
 
     function mint() public returns (uint256) {
