@@ -5,11 +5,11 @@
 
 ## Verified Factory Deployments
 
-- `Mumbai Testnet` - [0x4134fd593560Be3E5d52FCA6abe261166Ee2a7e1](https://mumbai.polygonscan.com/address/0x4134fd593560Be3E5d52FCA6abe261166Ee2a7e1#code)
+- `Mumbai Testnet` - [0xc92b9ae552ef0638f9545d1d902ef375da1ebca3](https://mumbai.polygonscan.com/address/0xc92b9ae552ef0638f9545d1d902ef375da1ebca3#code)
 
 ## Verified Implementation Deployments
 
-- `Mumbai Testnet` - [0xedb55471c211c757a2f46f59ac598c7f10223d42](https://mumbai.polygonscan.com/address/0xedb55471c211c757a2f46f59ac598c7f10223d42#code)
+- `Mumbai Testnet` - [0x807d90338744A78E8Fc51F0b1b00a30cF81D016a](https://mumbai.polygonscan.com/address/0x807d90338744A78E8Fc51F0b1b00a30cF81D016a#code)
 
 ## Safety
 
