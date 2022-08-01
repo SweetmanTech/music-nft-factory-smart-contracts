@@ -3,7 +3,7 @@ const hre = require("hardhat");
 async function main() {
   const NFTFactory = await hre.ethers.getContractFactory("NFTFactory");
   // MUMBAI
-  const musicNftImplementation = "0xedb55471c211c757a2f46f59ac598c7f10223d42";
+  const musicNftImplementation = "0x807d90338744A78E8Fc51F0b1b00a30cF81D016a";
 
   const factory = await NFTFactory.deploy(musicNftImplementation);
 
