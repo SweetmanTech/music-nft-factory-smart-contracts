@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.6.0",
-    "@openzeppelin/contracts-upgradeable": "^4.7.2",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "onchain-music-metadata": "^1.0.15"
   }
 }

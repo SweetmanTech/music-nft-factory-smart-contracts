@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.10;
+pragma solidity ^0.8.15;
 
 import "@openzeppelin/contracts/proxy/Clones.sol";
 import "./Album.sol";
@@ -19,7 +19,7 @@ contract NFTFactory {
     {
         address clone = Clones.clone(implementation);
         emit AlbumCreated(msg.sender, address(clone));
-        Album(address(clone)).initialize(_name, _symbol);
+        Album(address(clone)).initialize(_name, _symbol, msg.sender);
         return address(clone);
     }
 }

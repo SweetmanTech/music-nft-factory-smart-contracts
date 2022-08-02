@@ -7,6 +7,7 @@ async function main() {
   const implementation = await hre.upgrades.deployProxy(Album, [
     "Music NFT",
     "music",
+    "0xcfBf34d385EA2d5Eb947063b67eA226dcDA3DC38",
   ]);
 
   await implementation.deployed();
